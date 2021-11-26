@@ -1,0 +1,80 @@
+.main {
+  margin: 3rem 0;
+}
+
+.chart {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 110%;
+  margin: 2rem 0;
+}
+
+.main-text {
+  font-size: 1.4rem;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.key-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 2.5rem;
+}
+
+.chart-key-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-key {
+  display: flex;
+  align-items: center;
+  margin: 0.7rem 0;
+}
+
+.key {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.david-key {
+  background-color: rgba(197, 0, 0, 0.15);
+}
+
+.jessica-key {
+  background-color: rgba(0, 197, 79, 0.15);
+}
+
+.sarah-key {
+  background-color: rgba(51, 0, 197, 0.15);
+}
+
+.chart-desc {
+  padding: 1.8rem 1.3rem;
+  line-height: 1.7;
+}
+
+.result-btn-wrapper {
+  margin: 1.5rem var(--padding-x);
+  text-align: center;
+}
+
+.result-btn {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #1b1a27;
+  color: #1b1a27;
+  transition: all var(--transition-time) ease-in-out;
+}
+
+.result-btn:hover,
+.result-btn:focus {
+  background-color: #1b1a27;
+  color: var(--white);
+}

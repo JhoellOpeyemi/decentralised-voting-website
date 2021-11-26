@@ -1,98 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Poppins:wght@400;500;600;700;800;900&display=swap");
-
-:root {
-  --padding-x: 1rem;
-  --transition-time: 400ms;
-  --white: #fff;
-  --font-size: 1rem;
-}
-
-/* STYLES FOR MOBILE */
-
-/* Start of Basic Reset */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-size: var(--font-size);
-  min-height: 100vh;
-  font-family: "Poppins", sans-serif;
-}
-
-a {
-  text-decoration: none;
-  display: inline-block;
-}
-
-button {
-  cursor: pointer;
-}
-/* End of Basic Reset */
-
-/* Start of header section */
-/* Wrapper that wraps logo and nav */
-.logo-nav-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--white);
-}
-
-/* logo */
-.logo {
-  width: 5.8rem;
-}
-
-/* Nav styles - hide nav on default */
-.header-nav {
-  position: absolute;
-  top: 5.4rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background: var(--white);
-  padding: 2.7rem 0 0 0;
-  z-index: 2;
-  transform: translateX(-150%);
-  transition: all var(--transition-time) ease-in-out;
-}
-
-/* open nav when hamburger is clicked */
-.header-nav.open {
-  transform: translateX(0%);
-}
-
-/* Nav links */
-.header-nav-link {
-  font-weight: 500;
-  color: #000;
-  margin: 0 0 1.5rem 0;
-}
-
-/* Button in nav */
-.link-btn {
-  padding: 1rem;
-  background: #1b1a27;
-  color: var(--white);
-  border-radius: 0.5rem;
-}
-
-/* Hamburger to open nav */
-.hamburger {
-  background: none;
-  border: none;
-  padding: 0 var(--padding-x) 0 0;
-}
-
-.fa-bars,
-.fa-times {
-  font-size: 1.6rem;
-}
-/* End of header section */
+/* STYLES FOR Home page - mobile */
 
 /* Start of main section */
 /* Main */
@@ -147,7 +53,7 @@ button {
 
 .benefit-card {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.015);
+  background-color: rgba(0, 0, 0, 0.03);
   padding: 3rem 2rem 8rem 2rem;
   border-radius: 1rem;
 }
@@ -177,7 +83,7 @@ button {
 
 /* Start of steps section */
 .steps {
-  margin: 0 var(--padding-x);
+  margin: 0 1.8rem;
 }
 
 .section-heading {
@@ -348,20 +254,3 @@ button {
   color: rgba(0, 0, 0, 0.68);
 }
 /* End of testimonials section */
-
-/* Start of footer */
-.footer {
-  background-color: #1b1a27;
-  padding: 1rem 0;
-  text-align: center;
-}
-
-.footer-socials {
-  font-size: 1.7rem;
-  color: var(--white);
-}
-
-.footer-socials:not(:last-child) {
-  margin-right: 1.4rem;
-}
-/* End of footer */

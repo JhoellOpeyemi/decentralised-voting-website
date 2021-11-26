@@ -1,0 +1,92 @@
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/features-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.68);
+  background-blend-mode: multiply;
+  min-height: 30vh;
+  color: #eee;
+}
+
+.landing-text {
+  letter-spacing: 2px;
+}
+
+.why-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 4rem var(--padding-x) 1rem var(--padding-x);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Start of benefits section */
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin: 2rem 1rem;
+}
+
+.benefit-card {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 3rem 2rem 8rem 2rem;
+  border-radius: 1rem;
+}
+
+.benefit-card-img {
+  position: relative;
+  width: 9.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-heading {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.card-text {
+  padding-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 2rem;
+}
+/* End of benefit section */
+
+.check {
+  text-align: center;
+}
+
+.check-btn {
+  display: inline-block;
+  margin: 3rem var(--padding-x) 5rem var(--padding-x);
+  background-color: transparent;
+  border: 1px solid #1b1a27;
+  color: #1b1a27;
+  transition: all var(--transition-time) ease-in-out;
+}
+
+.check-btn:hover,
+.check-btn:focus {
+  background-color: #1b1a27;
+  color: var(--white);
+}
+
+.fa-arrow-right {
+  transition: all var(--transition-time) ease-in-out;
+  display: inline-block;
+  margin-left: 0.6rem;
+}
+
+.check-btn:hover .fa-arrow-right,
+.check-btn:focus .fa-arrow-right {
+  color: var(--white);
+}

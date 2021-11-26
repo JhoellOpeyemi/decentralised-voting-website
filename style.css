@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  --padding-x: 1rem;
+  --transition-time: 400ms;
+  --white: #fff;
+  --font-size: 1rem;
+}
+
+/* STYLES FOR MOBILE */
+
+/* Start of Basic Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--font-size);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+button {
+  cursor: pointer;
+}
+/* End of Basic Reset */
+
+/* Start of header section */
+/* Wrapper that wraps logo and nav */
+.logo-nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+}
+
+/* logo */
+.logo {
+  width: 5.8rem;
+}
+
+/* Nav styles - hide nav on default */
+.header-nav {
+  position: absolute;
+  top: 5.4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: var(--white);
+  padding: 2.7rem 0 0 0;
+  z-index: 2;
+  transform: translateX(-150%);
+  transition: all var(--transition-time) ease-in-out;
+}
+
+/* open nav when hamburger is clicked */
+.header-nav.open {
+  transform: translateX(0%);
+}
+
+/* Nav links */
+.header-nav-link {
+  font-weight: 500;
+  color: #000;
+  margin: 0 0 1.5rem 0;
+}
+
+/* Button in nav */
+.link-btn {
+  padding: 1rem;
+  background: #1b1a27;
+  color: var(--white);
+  border-radius: 0.5rem;
+}
+
+/* Hamburger to open nav */
+.hamburger {
+  background: none;
+  border: none;
+  padding: 0 var(--padding-x) 0 0;
+}
+
+.fa-bars,
+.fa-times {
+  font-size: 1.6rem;
+}
+/* End of header section */
+
+/* Start of main section */
+/* Main */
+.main {
+  min-height: 75vh;
+  background-image: url(./images/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.68);
+  background-blend-mode: multiply;
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem var(--padding-x);
+}
+
+/* Landing page text */
+.main-heading {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+/* Landing page description */
+.main-desc {
+  padding: 2rem 0;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+/* Landing page socials */
+.main-socials {
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+.main-socials:not(:last-child) {
+  margin-right: 1.4rem;
+}
+/* End of main section */
+
+/* Start of benefits section */
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin: 7rem 1rem;
+}
+
+.benefit-card {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.015);
+  padding: 3rem 2rem 8rem 2rem;
+  border-radius: 1rem;
+}
+
+.benefit-card-img {
+  position: relative;
+  width: 9.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-heading {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.card-text {
+  padding-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 2rem;
+}
+/* End of benefit section */
+
+/* Start of steps section */
+.steps {
+  margin: 0 var(--padding-x);
+}
+
+.section-heading {
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.steps-heading {
+  margin: 0 0 2rem 0;
+}
+
+.steps-heading::before {
+  content: "";
+  position: absolute;
+  bottom: -0.4rem;
+  width: 8rem;
+  height: 0.4rem;
+  background-color: #5550aa;
+  border-radius: 0.5rem;
+}
+
+.steps-desc {
+  font-weight: 500;
+}
+
+.steps-card {
+  position: relative;
+  background-color: #fff;
+  padding: 2.8rem 2rem;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 0.6rem;
+  margin: 5rem 0 0 0;
+}
+
+.step-card-num {
+  position: absolute;
+  top: -1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5550aa;
+  color: var(--white);
+  width: 3.2rem;
+  height: 3.2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 50%;
+}
+
+.step-card-heading {
+  font-size: 1.3rem;
+  padding: 0 0 1rem 0;
+}
+
+.step-card-desc {
+  line-height: 1.6;
+}
+/* End of steps section */
+
+/* Election candidates */
+.election-candidates {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.election-candidates-heading,
+.election-position {
+  padding: 0 0.5rem 1.5rem 0.5rem;
+}
+
+.election-position {
+  font-weight: 500;
+}
+
+.candidates-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: var(--padding-x);
+}
+
+.candidate {
+  margin-top: 3rem;
+}
+
+.candidate-img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.candidate-name {
+  font-size: 1.3rem;
+  padding: 1rem 0 0.2rem 0;
+}
+
+.candidate-job {
+  padding-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.candidate-socials {
+  font-size: 1.4rem;
+  color: #5550aa;
+}
+
+.candidate-socials:not(:last-child) {
+  margin-right: 0.8rem;
+}
+/* End of election candidate section*/
+
+/* Start of testimonials section*/
+.testimonials {
+  text-align: center;
+}
+
+.testimonials-heading {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.testimonials-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  padding: 0 var(--padding-x);
+}
+
+.testimonial {
+  position: relative;
+  background-color: rgba(85, 80, 170, 0.07);
+  border-radius: 1rem;
+  padding: 6rem 2.5rem 2rem 2.5rem;
+  margin-bottom: 4.8rem;
+}
+
+.client-img {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.client-text {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: italic;
+  padding-bottom: 1.7rem;
+}
+
+.client-name {
+  font-size: 1.1rem;
+  padding-bottom: 0.2rem;
+}
+
+.client-job {
+  color: rgba(0, 0, 0, 0.68);
+}
+/* End of testimonials section */
+
+/* Start of footer */
+.footer {
+  background-color: #1b1a27;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer-socials {
+  font-size: 1.7rem;
+  color: var(--white);
+}
+
+.footer-socials:not(:last-child) {
+  margin-right: 1.4rem;
+}
+/* End of footer */

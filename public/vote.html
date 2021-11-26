@@ -24,7 +24,9 @@
     <!-- Start of Header -->
     <header class="header">
       <div class="logo-nav-wrapper">
-        <img src="../images/logo.jpeg" alt="Logo" class="logo" />
+        <a href="../index.html">
+          <img src="../images/logo.jpeg" alt="Logo" class="logo" />
+        </a>
         <nav class="header-nav">
           <a href="../index.html" class="header-nav-link" aria-label="Home page"
             >Home</a
@@ -119,7 +121,7 @@
             <p class="candidate-contribution">
               David has been involved in multiple award winning projects like
               the development of Dripper Application Software for calculating
-              business profits. He has lead various teams after joining Vinestar
+              business profits. He has led various teams after joining Vinestar
               Ltd 3 years ago.
             </p>
 
@@ -169,7 +171,7 @@
           </div>
         </div>
 
-        <div class="candidate-card">
+        <div class="candidate-card span-2">
           <div class="header-img"></div>
           <img
             src="../images/Sarah.jpg"
@@ -204,8 +206,8 @@
             <p class="candidate-contribution">
               Sarah Edwards is a successful data scientist and analyst who has
               worked in numerous big companies like Facebook, Google, Microsoft.
-              She joined Vinestar Ltd. 2 years ago and has been won the
-              'Employee of the Year' award.
+              She joined Vinestar Ltd. 2 years ago and has won the 'Employee of
+              the Year' award.
             </p>
 
             <a href="#" class="link-btn vote-card-btn">Vote</a>
@@ -219,6 +221,16 @@
         ></a>
       </section>
     </main>
+
+    <form class="form" id="verify">
+      <h4 class="form-heading">Verify your details</h4>
+      <p class="success-message">Successfully Verified</p>
+      <input type="text" class="key-input input" placeholder="Key" />
+      <input type="email" class="email-input input" placeholder="Email" />
+      <button form="verify" type="submit" class="form-btn link-btn">
+        Submit
+      </button>
+    </form>
 
     <!-- Start of footer -->
     <footer class="footer">

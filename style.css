@@ -254,3 +254,120 @@
   color: rgba(0, 0, 0, 0.68);
 }
 /* End of testimonials section */
+
+@media screen and (min-width: 48rem) {
+  /* Start of main section */
+  /* Main */
+  .main {
+    min-height: 90vh;
+  }
+
+  /* Landing page text */
+  .main-heading {
+    font-size: 2.3rem;
+  }
+
+  /* Landing page description */
+  .main-desc {
+    padding: 2rem 7rem;
+    font-size: 1.2rem;
+  }
+
+  /* Landing page socials */
+  .main-socials {
+    font-size: 2.2rem;
+  }
+
+  .main-socials:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+  /* End of main section */
+
+  /* Start of benefits section */
+  .benefits {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .voting-card {
+    padding-top: 5rem;
+  }
+
+  .section-heading {
+    font-size: 1.8rem;
+  }
+
+  .steps,
+  .benefits,
+  .testimonials {
+    width: 90%;
+    max-width: 60rem;
+    margin: 7rem auto;
+  }
+
+  .steps-heading {
+    margin: 0 0 2.5rem 0;
+  }
+
+  .steps-heading::before {
+    bottom: -0.6rem;
+    width: 10rem;
+  }
+
+  .steps-desc {
+    font-size: 1.16rem;
+  }
+
+  .steps-card-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .steps-card {
+    position: relative;
+    padding: 3rem 2.2rem;
+    margin: 5rem 0 0 0;
+  }
+
+  .steps-card:last-child {
+    margin: 3rem 11rem 0 11rem;
+  }
+
+  .step-card-num {
+    font-size: 1.4rem;
+  }
+
+  /* Election candidates */
+  .election-candidates {
+    margin: 6rem 0;
+  }
+
+  .candidates-group {
+    flex-direction: row;
+    padding: var(--padding-x);
+  }
+
+  .candidate:not(:last-child) {
+    margin: 3rem 6.3rem 0 0;
+  }
+
+  .testimonials-heading {
+    font-size: 1.25rem;
+    margin: 8rem 0;
+  }
+
+  .testimonials-group {
+    flex-direction: row;
+  }
+
+  .testimonial:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  .client-img {
+    top: -2.7rem;
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+}

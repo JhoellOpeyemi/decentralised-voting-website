@@ -24,7 +24,9 @@
     <!-- Start of Header -->
     <header class="header">
       <div class="logo-nav-wrapper">
-        <img src="./images/logo.jpeg" alt="Logo" class="logo" />
+        <a href="../index.html">
+          <img src="../images/logo.jpeg" alt="Logo" class="logo" />
+        </a>
         <nav class="header-nav">
           <a href="index.html" class="header-nav-link" aria-label="Home page"
             >Home</a
@@ -55,7 +57,7 @@
           >
           <a
             href="./public/vote.html"
-            class="header-nav-link link-btn"
+            class="header-nav-link link-btn header-nav-btn"
             aria-label="Vote Now page"
             >Vote Now!</a
           >
@@ -86,7 +88,7 @@
 
     <!-- Start of benefits section -->
     <section class="benefits">
-      <div class="benefit-card">
+      <div class="benefit-card voting-card">
         <img
           src="./images/voting.svg"
           alt="Voting image"
@@ -160,31 +162,33 @@
       <h2 class="steps-heading section-heading">Steps to Vote</h2>
       <p class="steps-desc">How simple is it to vote using our DDS software?</p>
 
-      <div class="steps-card">
-        <p class="step-card-num">1</p>
-        <h3 class="step-card-heading">Click the VOTE NOW! button</h3>
-        <p class="step-card-desc">
-          The big blue button at the right of the taskbar, should be hard to
-          miss ;-)
-        </p>
-      </div>
+      <div class="steps-card-group">
+        <div class="steps-card">
+          <p class="step-card-num">1</p>
+          <h3 class="step-card-heading">Click the VOTE NOW! button</h3>
+          <p class="step-card-desc">
+            The big blue button at the right of the taskbar, should be hard to
+            miss ;-)
+          </p>
+        </div>
 
-      <div class="steps-card">
-        <p class="step-card-num">2</p>
-        <h3 class="step-card-heading">Verify your details</h3>
-        <p class="step-card-desc">
-          Enter your first name, last name and email along with any other
-          required information. This is needed to know who voted.
-        </p>
-      </div>
+        <div class="steps-card">
+          <p class="step-card-num">2</p>
+          <h3 class="step-card-heading">Verify your details</h3>
+          <p class="step-card-desc">
+            Enter your first name, last name and email along with any other
+            required information. This is needed to know who voted.
+          </p>
+        </div>
 
-      <div class="steps-card">
-        <p class="step-card-num">3</p>
-        <h3 class="step-card-heading">Vote</h3>
-        <p class="step-card-desc">
-          After verifying your details, then you can choose and vote for who you
-          decide on.
-        </p>
+        <div class="steps-card span-2">
+          <p class="step-card-num">3</p>
+          <h3 class="step-card-heading">Vote</h3>
+          <p class="step-card-desc">
+            After verifying your details, then you can choose and vote for who
+            you decide on.
+          </p>
+        </div>
       </div>
     </section>
     <!-- End of steps section -->

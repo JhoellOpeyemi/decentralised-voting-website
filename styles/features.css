@@ -90,3 +90,30 @@
 .check-btn:focus .fa-arrow-right {
   color: var(--white);
 }
+
+@media screen and (min-width: 48rem) {
+  .landing-page {
+    min-height: 40vh;
+  }
+
+  .landing-text {
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+  }
+
+  .main {
+    width: 90%;
+    max-width: 60rem;
+    margin: auto;
+  }
+
+  .benefits {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin: 2rem 0;
+  }
+
+  .voting-card {
+    padding-top: 5rem;
+  }
+}

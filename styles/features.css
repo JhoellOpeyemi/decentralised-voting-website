@@ -116,4 +116,9 @@
   .voting-card {
     padding-top: 5rem;
   }
+
+  .voter-card,
+  .security-card {
+    grid-column: 1 / 3;
+  }
 }

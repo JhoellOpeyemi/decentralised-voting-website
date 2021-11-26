@@ -332,6 +332,7 @@
 
   .steps-card:last-child {
     margin: 3rem 11rem 0 11rem;
+    grid-column: 1 / 3;
   }
 
   .step-card-num {

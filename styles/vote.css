@@ -1,0 +1,147 @@
+.main {
+  --padding-x: 1.4rem;
+  margin: 2rem var(--padding-x);
+}
+
+.main-text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.vote-position {
+  padding: 1rem 0;
+}
+
+.position-text {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.position {
+  font-weight: 600;
+  display: block;
+  margin: 0.4rem var(--padding-x);
+}
+
+.position-desc-heading {
+  margin: 2.5rem 0 1rem 0;
+}
+
+.position-desc {
+  line-height: 1.8;
+}
+
+.candidate-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 4rem 0;
+}
+
+.candidate-card {
+  width: 100%;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.header-img {
+  background-image: url("../images/vote-card-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(27, 26, 39, 0.6);
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 10rem;
+}
+
+.candidate-img {
+  width: 9.4rem;
+  height: 9.4rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: -4rem 0 0 0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.candidate-details {
+  padding: 1rem 1.5rem;
+}
+
+.candidate-name {
+  font-size: 1.36rem;
+  padding: 0.4rem 0 0.2rem 0;
+}
+
+.candidate-job {
+  padding-bottom: 0.8rem;
+  font-weight: 500;
+  color: #888;
+}
+
+.experience {
+  padding: 1.5rem 0 1rem 0;
+  border-bottom: 1px solid #5550aa;
+}
+
+.year {
+  color: #2d2b57;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.experience-text {
+  font-style: italic;
+}
+
+.candidate-socials {
+  font-size: 1.4rem;
+  color: #5550aa;
+}
+
+.candidate-socials:not(:last-child) {
+  margin-right: 0.8rem;
+}
+
+.candidate-contribution {
+  padding: 1.5rem 0;
+  line-height: 1.8;
+}
+
+.vote-card-btn {
+  width: 100%;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.view-results {
+  text-align: center;
+}
+
+.view-results-btn {
+  display: inline-block;
+  margin: 3rem 0 5rem 0;
+  background-color: transparent;
+  border: 1px solid #1b1a27;
+  color: #1b1a27;
+  transition: all var(--transition-time) ease-in-out;
+}
+
+.view-results-btn:hover,
+.view-results-btn:focus {
+  background-color: #1b1a27;
+  color: var(--white);
+}
+
+.fa-arrow-right {
+  transition: all var(--transition-time) ease-in-out;
+  display: inline-block;
+  margin-left: 0.6rem;
+}
+
+.view-results-btn:hover .fa-arrow-right,
+.view-results-btn:focus .fa-arrow-right {
+  color: var(--white);
+}

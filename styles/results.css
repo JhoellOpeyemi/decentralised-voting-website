@@ -9,6 +9,22 @@
   width: 90%;
   height: 110%;
   margin: 2rem 0;
+  overflow: hidden;
+}
+
+.chart .chart-stick {
+  transform-origin: bottom;
+  transform: scaleY(0);
+  animation: chartAnim 1.8s ease-in-out forwards;
+}
+
+@keyframes chartAnim {
+  80% {
+    transform: scaleY(1.15);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
 
 .main-text {

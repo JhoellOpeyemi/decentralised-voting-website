@@ -77,6 +77,15 @@ button {
   background: #1b1a27;
   color: var(--white);
   border-radius: 0.5rem;
+  border: 1px solid transparent;
+  transition: all var(--transition-time) ease-in-out;
+}
+
+.link-btn:hover,
+.link-btn:focus {
+  color: #1b1a27;
+  border: 1px solid #1b1a27;
+  background: var(--white);
 }
 
 /* Hamburger to open nav */
